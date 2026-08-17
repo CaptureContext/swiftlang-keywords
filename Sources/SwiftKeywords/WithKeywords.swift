@@ -5,7 +5,6 @@ extension KeywordsContainer {
 	static let _initialValue: Box = .init()
 
 	@TaskLocal
-	@usableFromInline
 	static var current: KeywordsContainer = _initialValue.container
 
 	final class Box: @unchecked Sendable {
